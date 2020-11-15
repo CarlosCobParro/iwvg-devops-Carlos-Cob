@@ -15,6 +15,9 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/miw-upm/iwvg-devops?branch=develop)](https://bettercodehub.com/results/miw-upm/iwvg-devops)
 [![Heroku broken](https://iwvg-devops.herokuapp.com/system/version-badge)](https://iwvg-devops.herokuapp.com/swagger-ui.html)
 
+
+[![Build Status](https://travis-ci.com/CarlosCobParro/iwvg-devops-Carlos-Cob.svg?branch=develop)](https://travis-ci.com/CarlosCobParro/iwvg-devops-Carlos-Cob)
+
 ### Tecnologías necesarias
 `Java` `Maven` `GitHub` `Travis-ci` `Sonarcloud` `Better Code Hub` `Slack` `Spring-boot` `Heroku` `OpenAPI`
 

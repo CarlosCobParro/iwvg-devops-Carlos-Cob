@@ -15,3 +15,8 @@ script:
   - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
   - mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=carloscobparro -Dsonar.login=$SONAR
 
+deploy:
+  provider: heroku
+  api_key: $HEROKU
+  on:
+    branch: master
