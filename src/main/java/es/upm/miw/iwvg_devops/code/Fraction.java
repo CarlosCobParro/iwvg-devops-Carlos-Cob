@@ -59,6 +59,29 @@ public class Fraction {
         return (double) numerator / denominator;
     }
 
+    public Fraction add (Fraction input1){
+        return new Fraction(((this.getNumerator()*input1.getDenominator())+(this.getDenominator()*input1.getNumerator())),(this.getDenominator()*input1.getDenominator()));
+        }
+
+    public Fraction sub (Fraction input1){
+        return new Fraction(((this.getNumerator()*input1.getDenominator())-(this.getDenominator()*input1.getNumerator())),(this.getDenominator()*input1.getDenominator()));
+        }
+
+    public Fraction revalue(int numerator, int denominator){
+        return new Fraction(numerator,denominator);
+
+    }
+
+    public Fraction divide(Fraction input1){
+        return new Fraction((this.getNumerator()*input1.getDenominator()),(this.getDenominator()*input1.getNumerator()));
+        }
+
+
+    public boolean isEquivalent(Fraction inputFraction) {
+        return (inputFraction.numerator * this.denominator == inputFraction.denominator * this.numerator);
+    }
+
+
     @Override
     public String toString() {
         return "Fraction{" +
