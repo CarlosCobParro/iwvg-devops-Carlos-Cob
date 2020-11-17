@@ -111,7 +111,7 @@ public class Searches {
     public Fraction findHighestFraction() {
         return new UsersDatabase().findAll()
                 .flatMap(user -> user.getFractions().stream())
-                .max(Comparator.comparingDouble(Fraction::decimal)).get();
+                .max(Comparator.comparingDouble(Fraction::decimal)).orElse(null);
     }
 
 }
