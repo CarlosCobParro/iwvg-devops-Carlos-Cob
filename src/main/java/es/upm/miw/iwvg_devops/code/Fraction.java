@@ -67,14 +67,25 @@ public class Fraction {
         return new Fraction(((this.getNumerator()*input1.getDenominator())-(this.getDenominator()*input1.getNumerator())),(this.getDenominator()*input1.getDenominator()));
         }
 
-    public Fraction revalue(int numerator, int denominator){
-        return new Fraction(numerator,denominator);
 
-    }
 
     public Fraction divide(Fraction input1){
         return new Fraction((this.getNumerator()*input1.getDenominator()),(this.getDenominator()*input1.getNumerator()));
         }
+
+    public Fraction mul(Fraction input1){
+        return new Fraction((this.getNumerator()*input1.getNumerator()),(this.getDenominator()*input1.getDenominator()));
+    }
+
+    public boolean isProper() {
+        return (this.numerator < this.denominator);
+
+    }
+
+    public boolean isImproper() {
+        return (this.numerator >= this.denominator);
+
+    }
 
 
     public boolean isEquivalent(Fraction inputFraction) {
